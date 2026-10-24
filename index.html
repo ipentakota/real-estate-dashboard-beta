@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real Estate Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>🏠 Real Estate Dashboard</h1>
+
+  <h2>Average Home Price: $390,000</h2>
+
+  <canvas id="priceChart" width="600" height="300"></canvas>
+
+  <script>
+    new Chart(document.getElementById('priceChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Downtown', 'Midtown', 'Uptown'],
+        datasets: [{
+          label: 'Average Price',
+          data: [365000, 450000, 462000]
+        }]
+      }
+    });
+  </script>
+</body>
+</html>
